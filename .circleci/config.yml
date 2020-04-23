@@ -2,8 +2,8 @@ version: 2
 jobs: 
   build:
     docker: 
-    - image: circleci/ ruby:2.6.3-stretch-nodw
+      - image: circleci/ ruby:2.6.3-stretch-node
       
-      steps:
+    steps:
       - checkout
       - run: echo "Hello CircleCI!"
